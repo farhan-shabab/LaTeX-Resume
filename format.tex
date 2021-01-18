@@ -1,0 +1,281 @@
+% General Resume Format
+% Authot: Farhan Shabab
+% Last updated: 17 Jan 2021
+
+
+\documentclass{article}
+
+%----------------------------------------------------------------------------------------------
+%				 Call packages
+%----------------------------------------------------------------------------------------------
+
+\usepackage[margin=0.55in]{geometry}		% set page margins
+\usepackage{titling}				% to modify maketitle
+\usepackage{titlesec}
+\usepackage[dvipsnames]{xcolor}			% make color names for driver dvips available
+\usepackage{enumitem}				% for modify bullet indentation
+
+%----------------------------------------------------------------------------------------------
+% 				Create Main Heading
+%----------------------------------------------------------------------------------------------
+
+\renewcommand{\maketitle}			% Modify maketitle
+{
+
+	\begin{center}
+
+	{\LARGE\bfseries\color{BrickRed}\MakeUppercase{\theauthor}}
+
+	\vspace{0.4em}
+
+	{\large
+
+		718 749 8120			\textbar\hspace{0.15em}
+		farhan.shabab@outlook.com	\textbar\hspace{0.15em}
+		linkedin.com/in/fshabab	
+	
+	}
+	
+	\end{center}
+}
+
+
+%----------------------------------------------------------------------------------------------
+%			Modify bullet size and linespacing
+%----------------------------------------------------------------------------------------------
+
+\renewcommand\labelitemi			% Modify itemize
+{
+	$\vcenter				% Center the bullets
+	{
+		\hbox{\tiny$\bullet$}		% Shrink bullet size
+	}$
+}
+
+
+\newenvironment{mytemize}			% Create new env from itemize
+{
+\begin{itemize}[leftmargin=*]			% Remove natural indent
+
+	\setlength\itemsep{-0.25em}		% Line vertical spacing
+	%\setlength\parskip{0em}
+	%\setlength\parsep{-2em}
+	
+}
+{\end{itemize}}
+
+
+%---------------------------------------------------------------------------------------------
+%			Format sections headers
+%---------------------------------------------------------------------------------------------
+
+\titleformat{\section}
+{\large\bfseries}			%format
+{\hspace{-0.25em}}			%toggle numbering/bullets
+{0em}					%space
+{}					%text in between
+[\titlerule]
+
+
+\titleformat{\subsection}
+{\large}
+{}{0em}{}
+
+
+\titleformat{\subsubsection}
+{\itshape\large}
+{}{0em}{}
+
+
+%############################################################################################
+%				Begin Content
+%--------------------------------------------------------------------------------------------
+
+
+\begin{document}			%begin body
+
+
+\title{R\'esum\'e}
+\author{Farhan Shabab}
+\maketitle
+
+
+%-------------------------------------------------------------------------------------------
+%				Education
+%-------------------------------------------------------------------------------------------
+
+\section{\color{BrickRed} EDUCATION}
+
+\vspace{-0.3em}
+
+
+\subsection{\textbf{Columbia University} \hfill New York, NY}
+\vspace{-0.6em}
+\subsubsection{Master of Science, Mechanical Engineering \hfill Sept 2016 - Dec 2017}
+
+\vspace{-0.15em}
+
+\subsection{\textbf{Vanderbilt University} \hfill Nashville, TN}
+\vspace{-0.6em}
+\subsubsection{Bachelor of Science, Mechanical Engineering \hfill Aug 2011 - May 2015}
+
+
+\vspace{0.2em}				%Section spacer
+
+
+%------------------------------------------------------------------------------------------
+%				Experience					
+%------------------------------------------------------------------------------------------
+
+\section{\color{BrickRed} WORK EXPERIENCE}
+
+%\vspace{-0.25em}
+
+
+%------------------------------------------------------------------------------------------
+
+\subsection{\textbf{Tesla, Inc.} \hfill Sparks, NV \textbar \hspace{0.1em} Fremont, CA}
+
+\vspace{-0.45em}
+\subsubsection{Manufacturing Engineer \hfill Oct 2018 - Present}
+
+\vspace{-0.25em}
+\begin{mytemize}
+
+	\item Body
+	\item Continue
+
+\end{mytemize}
+
+%******************************************************************************************
+
+\vspace{-2em}				%Subsubsection spacer
+\subsubsection{Equipment Engineer \hfill Jan 2018 - Sept 2018}
+
+\vspace{-0.25em}
+\begin{mytemize}
+
+	\item Body
+	\item Continue
+
+\end{mytemize}
+
+%******************************************************************************************
+
+\vspace{-2em}				% Subsubsection spacer
+\subsubsection{Manufacturing Operations Intern \hfill May 2017 - Sept 2017}
+
+\vspace{-0.25em}
+\begin{mytemize}
+
+	\item Body
+	\item Continue
+
+\end{mytemize}
+
+
+%------------------------------------------------------------------------------------------
+
+\vspace{-1.75em}			% Subsection Spacer
+
+\subsection{\textbf{The Coca-Cola Company} (AML BU) \hfill Dhaka, Bangladesh} 
+
+\vspace{-0.4em}
+\subsubsection{Production Engineer \hfill Feb 2016 - Aug 2016}
+
+\vspace{-0.25em}
+\begin{mytemize}
+
+	\item Body
+	\item Continue
+
+\end{mytemize}
+
+
+%------------------------------------------------------------------------------------------
+
+\vspace{-1.75em}			% Subsection Spacer
+
+\subsection{\textbf{Siemens Healthineers} \hfill Dhaka, Bangladesh}
+
+\vspace{-0.4em}
+\subsubsection{Graduate Trainee \hfill Sept 2015 - Aug 2016}
+
+\vspace{-0.25em}
+\begin{mytemize}
+
+	\item Body
+	\item Continue
+
+\end{mytemize}
+
+
+%------------------------------------------------------------------------------------------
+
+\vspace{-1.75em}			% Subsection spacer
+
+\subsection{\textbf{Nissan North America, Inc.} \hfill Smyrna, TN}
+
+\vspace{-0.4em}
+\subsubsection{AGV Design Intern \hfill Sept 2014 -April 2015}
+
+\vspace{-0.25em}
+\begin{mytemize}
+
+	\item Body
+	\item Continue
+
+\end{mytemize}
+
+
+%------------------------------------------------------------------------------------------
+
+\vspace{-1.5em}				% Section spacer
+
+
+%------------------------------------------------------------------------------------------
+%					Project
+%------------------------------------------------------------------------------------------
+
+\section{\color{BrickRed} RECENT PROJECTS}
+
+\vspace{-0.25em}
+\begin{mytemize}
+
+	\item \textbf{Body} More
+	\item \textbf{Continue} More
+
+\end{mytemize}
+
+
+\vspace{-1.5em}				% Section spacer
+
+
+%------------------------------------------------------------------------------------------
+%					Skils
+%------------------------------------------------------------------------------------------
+
+\section{\color{BrickRed} SKILLS}
+
+
+%\begin{center}
+\begin{tabular}{ll}
+
+
+\vspace{0.5em}				%space betn design and software
+\large\textbf{Design \& Analysis}	&DFMA, FEA, GD\&T(ASME Y14.5), Tolerance Stack Analysis, SPC \\
+
+\large\textbf{Software \& Language}	&Solidworks (CAD \& Simulation), AutoCAD Standard, Roboguide \\
+					&RSLogix 5000, AutoCAD Electrical, Python \\
+					&Minitab, MS Project
+
+\end{tabular}
+%\end{center}
+
+
+%-------------------------------------------------------------------------------------------
+
+\end{document}				%end body
+
+
+%###########################################################################################
